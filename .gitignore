@@ -1,0 +1,40 @@
+# Windows
+Thumbs.db
+Desktop.ini
+*.log
+
+# VSCode
+.vscode/
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+out/
+build/
+
+# Maven
+target/
+dependency-reduced-pom.xml
+*.properties
+
+# Gradle
+.gradle/
+build/
+gradlew
+gradlew.bat
+
+# Node / Angular
+node_modules/
+dist/
+
+# Android
+*.apk
+*.ap_
+*.dex
+*.class
+*.so
+*.db
+local.properties
+.cxx/
+captures/
+.externalNativeBuild/
