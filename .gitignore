@@ -1,33 +1,51 @@
+# ========================
 # Windows
+# ========================
 Thumbs.db
 Desktop.ini
 *.log
 
+# ========================
 # VSCode
+# ========================
 .vscode/
 
+# ========================
 # IntelliJ / Android Studio
+# ========================
 .idea/
 *.iml
 out/
 build/
 
+# ========================
 # Maven
+# ========================
 target/
 dependency-reduced-pom.xml
 *.properties
+.mvn/wrapper/maven-wrapper.jar
 
+# ========================
 # Gradle
+# ========================
 .gradle/
 build/
 gradlew
 gradlew.bat
 
+# ========================
 # Node / Angular
+# ========================
 node_modules/
 dist/
+.env
+npm-debug.log
+yarn-error.log
 
+# ========================
 # Android
+# ========================
 *.apk
 *.ap_
 *.dex
@@ -38,3 +56,22 @@ local.properties
 .cxx/
 captures/
 .externalNativeBuild/
+*.keystore
+
+# ========================
+# Logs e arquivos temporários
+# ========================
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+*.rej
+
+# ========================
+# MacOS
+# ========================
+.DS_Store
+.AppleDouble
+.LSOverride
