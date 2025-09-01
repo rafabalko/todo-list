@@ -1,0 +1,55 @@
+<div class="container">
+  <h1>Minha Lista de Tarefas (Web)</h1>
+  <button class="toggle-theme-btn" (click)="toggleTheme()">Alternar Tema</button>
+  <!-- Formulário de adição -->
+  <form class="form-add" (ngSubmit)="adicionarTarefa()">
+    <input
+      type="text"
+      placeholder="O que precisa ser feito?"
+      [(ngModel)]="novaTarefa.descricao"
+      name="descricao"
+      required
+    >
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <!-- Lista de tarefas -->
+  <ul class="task-list">
+    <li *ngFor="let tarefa of tarefas">
+      <!-- Checkbox -->
+      <input
+        type="checkbox"
+        [(ngModel)]="tarefa.concluida"
+        (change)="atualizarStatus(tarefa)"
+      >
+
+      <!-- Texto ou input para edição -->
+      <span *ngIf="!tarefa.editando"
+            (dblclick)="iniciarEdicao(tarefa)"
+            [ngClass]="{'completed': tarefa.concluida}">
+        {{ tarefa.descricao }}
+      </span>
+
+      <input *ngIf="tarefa.editando"
+             type="text"
+             [(ngModel)]="tarefa.descricao"
+             (blur)="salvarEdicao(tarefa)"
+             (keyup.enter)="salvarEdicao(tarefa)"
+             (keyup.escape)="cancelarEdicao(tarefa)"
+             class="edit-input"
+             #editInput
+      >
+
+      <!-- Botão deletar -->
+      <button class="delete-btn" (click)="deletarTarefa(tarefa.id)">×</button>
+    </li>
+  </ul>
+  <footer class="app-footer">
+    <p>
+      Desenvolvido por Rafael Balko |
+      <a href="https://github.com/rafabalko" target="_blank">GitHub</a>
+    </p>
+  </footer>
+</div>
+
+
