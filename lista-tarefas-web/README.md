@@ -1,59 +1,82 @@
-# ListaTarefasWeb
+# 📋 Lista de Tarefas WEB
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.0.
+Um sistema simples de **lista de tarefas (To-Do List)** desenvolvido para fins de estudo e prática.  
+Permite criar, listar, atualizar e remover tarefas de forma rápida e organizada.
 
-## Development server
+---
+## ✨ Funcionalidades
 
-To start a local development server, run:
+- ✅ Adicionar novas tarefas
+- 📌 Listar todas as tarefas
+- ✏️ Editar/atualizar uma tarefa
+- 🗑️ Remover uma tarefa
 
-```bash
-ng serve
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+### Backend
+- [Spring Boot](https://spring.io/projects/spring-boot) – API REST
+- [Maven](https://maven.apache.org/) – Gerenciador de dependências
+- [Java](https://www.oracle.com/java/) – Linguagem principal
+
+### Frontend
+- [Angular](https://angular.io/) – Framework frontend
+- [TypeScript](https://www.typescriptlang.org/) – Linguagem para o frontend
+
+### Banco de Dados
+- [H2 Database](https://www.h2database.com/)
+
+---
+
+## 🚀 Como Executar o Projeto
+
+### ✅ Rodando pelo IntelliJ IDEA
+1. Abra o **IntelliJ IDEA**.
+2. Clique em **File > Open** e selecione a pasta do projeto (`lista-tarefas-api`).
+3. No canto esquerdo, você verá as três pastas:
+  - `lista-tarefas-api`
+  - `lista-tarefas-web`
+  - `lista-tarefas-desktop`
+4. Navegue até:  
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+lista-tarefas-api/src/main/java/br/com/curso/lista_tarefas/api
 ```
+5. Localize o arquivo `ListaTarefasApiApplication.java`, clique nele com o botão direito e escolha **Run**.
+- A API ficará disponível em: 👉 http://localhost:8080
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+6. Depois, abra o **terminal dentro do IntelliJ** e execute:
 ```bash
-ng generate --help
+  cd lista-tarefas-web
+ng serve --open
 ```
+- O Angular vai iniciar o servidor web.
+- O navegador será aberto automaticamente em: 👉 http://localhost:4200/
+---
 
-## Building
+### ✅ Rodando pelo Terminal (sem IDE)
 
-To build the project run:
-
+1. Abra o terminal e inicie a API:
 ```bash
-ng build
+   cd C:\Users\SEU-USUARIO\PASTA-ONDE-FOI-BAIXADA\lista-tarefas\lista-tarefas-api
+   mvn spring-boot:run
 ```
+- Troque o **"SEU-USUARIO"** pelo nome do seu usuário;
+- Troque **"PASTA-ONDE-FOI-BAIXADA"** pelo caminho da onde a pasta **"lista-tarefas"** se encontra.
+- A API ficará disponível em: 👉 http://localhost:8080
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
+2. Em outro aba do terminal, inicie o frontend:
 ```bash
-ng test
+   cd C:\Users\SEU-USUARIO\PASTA-ONDE-FOI-BAIXADA\lista-tarefas\lista-tarefas-web
+   npm install   # apenas na primeira vez
+   ng serve --open
 ```
+- Troque o **"SEU-USUARIO"** pelo nome do seu usuário;
+- Troque **"PASTA-ONDE-FOI-BAIXADA"** pelo caminho da onde a pasta **"lista-tarefas"** se encontra. 
+- O frontend ficará disponível em: 👉 http://localhost:4200
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+## Rodapé
+Desenvolvido por **Rafael Balko**.  
+[GitHub](https://github.com/rafabalko)  
+[Instagram](https://www.instagram.com/rafaabalko/?hl=pt-br)
