@@ -29,7 +29,11 @@ Permite criar, listar, atualizar e remover tarefas de forma rápida e organizada
 ---
 
 ## 🚀 Como Executar o Projeto
-
+### 📥 Clonar o repositório
+```
+git clone https://github.com/rafabalko/lista-tarefas.git
+cd lista-tarefas/lista-tarefas-desktop
+```
 ### ✅ Rodando pelo IntelliJ IDEA
 1. Abra o **IntelliJ IDEA**.
 2. Clique em **File > Open**.
