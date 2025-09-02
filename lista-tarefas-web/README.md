@@ -33,7 +33,7 @@ Permite criar, listar, atualizar e remover tarefas de forma rápida e organizada
 
 ### ✅ Rodando pelo IntelliJ IDEA
 1. Abra o **IntelliJ IDEA**.
-2. Clique em **File > Open** e selecione a pasta do projeto (`lista-tarefas-api`).
+2. Clique em **File > Open** e selecione a pasta do projeto (`lista-tarefas`).
 3. No canto esquerdo, você verá as três pastas:
   - `lista-tarefas-api`
   - `lista-tarefas-web`
